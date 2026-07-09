@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradip Pandit | Portfolio</title>
+    <link rel="stylesheet" href='Assets/style.css'>
+</head>
+<body>
+<div class="background-lines" id="bg-lines"></div>
+<button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-logo" onclick="navigateTo('Home')">&lt;DEV/&gt;</div>
+    <div class="nav-links">
+        <span class="nav-link active" data-section="Home" onclick="navigateTo('Home')">Home</span>
+        <span class="nav-link" data-section="About" onclick="navigateTo('About')">About</span>
+        <span class="nav-link" data-section="Skills" onclick="navigateTo('Skills')">Skills</span>
+        <span class="nav-link" data-section="Resume" onclick="navigateTo('Resume')">Resume</span>
+        <span class="nav-link" data-section="Contact" onclick="navigateTo('Contact')">Contact</span>
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+    </div>
+</nav>
+<div class="main-content">
+<section id="Home" class="hero-section">
+    <div class="particles" id="particles"></div>
+    <div class="hero-orb"></div>
+    <div class="hero-content">
+        <p class="hero-subtitle">Welcome to my portfolio</p>
+        <h1 class="hero-title">
+            <span>Hi, I'm </span>
+            <span class="gradient-text">Pradip Pandit</span>
+        </h1>
+        <p class="typed-text" id="typedText"></p>
+        <div class="hero-buttons">
+            <button class="btn-primary" onclick="navigateTo('Resume')">View My Resume</button>
+            <button class="btn-outline" onclick="navigateTo('Contact')">Get In Touch</button>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    </div>
+</section>    <div class="section-divider"></div>
+<section id="About" class="about-section section-reveal">
+    <div class="section-container">
+        <h2 class="section-title"><span>About </span><span class="gradient-text">Me</span></h2>
+        <div class="title-bar"></div>
+
+        <div class="about-grid">
+            <div class="about-left">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-bg"></div>
+                    <span class="avatar-emoji">🛡️</span>
+                    <div class="avatar-badge">✨ Available</div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><span class="stat-icon">🏆</span><span class="stat-value gradient-text">4+</span><span class="stat-label">Certifications</span></div>
+                    <div class="stat-card"><span class="stat-icon">💼</span><span class="stat-value gradient-text">3+</span><span class="stat-label">Years Experience</span></div>
+                    <div class="stat-card"><span class="stat-icon">🛡️</span><span class="stat-value gradient-text">5+</span><span class="stat-label">Network Technologies</span></div>
+                    <div class="stat-card"><span class="stat-icon">💻</span><span class="stat-value gradient-text">4+</span><span class="stat-label">Programming Languages</span></div>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <div class="role-badge">🔒 <span>Network Security Engineer</span></div>
+                <p class="about-text">Highly motivated IT Professional with over three years of experience as a Full Stack Developer, support/ticket resolution, administration/service requests, monitoring and troubleshooting various network technologies. I aim to expand my career as a Network Engineer / Cyber Security Engineer, using my technical talents and problem-solving expertise to create and optimize advanced network solutions.</p>
+                <p class="about-text">I hold certifications like CCNA, Google IT Support Certificate, ISC2 CC and CompTIA CySA+. I possess an insatiable curiosity for all things tech, whether it's the latest software innovations, networking, cybersecurity, or cutting-edge hardware releases.</p>
+                <div class="info-grid">
+                    <div class="info-card"><div class="info-icon">📍</div><div><span class="info-label">Current City</span><span class="info-value">Boston, MA</span></div></div>
+                    <div class="info-card"><div class="info-icon">🏠</div><div><span class="info-label">Home Country</span><span class="info-value">Nepal</span></div></div>
+                    <div class="info-card"><div class="info-icon">🎓</div><div><span class="info-label">Degree</span><span class="info-value">Master of Science</span></div></div>
+                    <div class="info-card"><div class="info-icon">🔐</div><div><span class="info-label">Major</span><span class="info-value">Cybersecurity & IA</span></div></div>
+                </div>
+                <div class="about-cta">
+                    <a href="https://www.linkedin.com/in/pradippandit" target="_blank" class="btn-primary">💼 Connect on LinkedIn</a>
+                    <a href="https://github.com/pradip026" target="_blank" class="btn-outline">⚡ View GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    <div class="section-divider purple"></div>
+<section id="Skills" class="skills-section section-reveal">
+    <div class="section-container">
+        <h2 class="section-title"><span>My </span><span class="gradient-text">Skills</span></h2>
+        <div class="title-bar"></div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 class="skill-category accent">🛡️ Networking & Security</h3>
+                <div class="skill-bar-wrap"><span>🌐 Routing/Switching & Wireless</span><span class="accent">90%</span><div class="skill-track"><div class="skill-fill" data-level="90"></div></div></div>
+                <div class="skill-bar-wrap"><span>🔥 Security/Firewalls Technologies</span><span class="accent">88%</span><div class="skill-track"><div class="skill-fill" data-level="88"></div></div></div>
+                <div class="skill-bar-wrap"><span>🏗️ Network Architectures & Services</span><span class="accent">85%</span><div class="skill-track"><div class="skill-fill" data-level="85"></div></div></div>
+                <div class="skill-bar-wrap"><span>📊 Monitoring/Data Center Technologies</span><span class="accent">82%</span><div class="skill-track"><div class="skill-fill" data-level="82"></div></div></div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-category purple">💻 Programming</h3>
+                <div class="skill-bar-wrap"><span>🐍 Python</span><span class="accent">88%</span><div class="skill-track"><div class="skill-fill" data-level="88"></div></div></div>
+                <div class="skill-bar-wrap"><span>💜 C#</span><span class="accent">80%</span><div class="skill-track"><div class="skill-fill" data-level="80"></div></div></div>
+                <div class="skill-bar-wrap"><span>🎨 HTML/CSS</span><span class="accent">85%</span><div class="skill-track"><div class="skill-fill" data-level="85"></div></div></div>
+                <div class="skill-bar-wrap"><span>⚡ JavaScript</span><span class="accent">83%</span><div class="skill-track"><div class="skill-fill" data-level="83"></div></div></div>
+            </div>
+        </div>
+
+        <div class="tags-section">
+            <h3>Soft Skills</h3>
+            <div class="tags-wrap">
+                <span class="tag">Customer Service</span><span class="tag">Problem-solving</span>
+                <span class="tag">Time Management</span><span class="tag">Multitasking</span><span class="tag">Leadership</span>
+            </div>
+        </div>
+        <div class="tags-section">
+            <h3>Interests</h3>
+            <div class="tags-wrap purple">
+                <span class="tag purple">Technology</span><span class="tag purple">Travel</span>
+                <span class="tag purple">Movies & TV Shows</span><span class="tag purple">Sports</span>
+                <span class="tag purple">Reading</span><span class="tag purple">Music</span>
+            </div>
+        </div>
+    </div>
+</section>    <div class="section-divider"></div>
+<section id="Resume" class="resume-section section-reveal">
+    <div class="section-container">
+        <h2 class="section-title"><span>My </span><span class="gradient-text">Resume</span></h2>
+        <div class="title-bar"></div>
+
+        <h3 class="resume-heading accent">💼 Professional Experience</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot" style="border-color:#ff9900;box-shadow:0 0 10px #ff990050"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div><h4>📦 IT Support Associate II</h4><p style="color:#ff9900">Amazon — Texas, United States</p></div>
+                        <span class="period-badge" style="color:#ff9900;border-color:#ff990030;background:#ff990015">Jun 2023 - Present</span>
+                    </div>
+                    <ul><li>Troubleshot and resolved network, hardware, and software issues promptly, minimizing downtime and optimizing performance through internal applications.</li><li>Able to utilize strong judgment and aptitude in troubleshooting a variety of tickets, as well as implementing interpersonal communication skills at all scope levels.</li><li>Focused on administration/service requests and escalation of support/ticket in an enterprise LAN/WAN environment promptly while providing the ultimate customer service experience using ServiceNow.</li><li>Created and updated technical documentation to maintain accurate records of any technical changes.</li></ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot" style="border-color:#00f0ff;box-shadow:0 0 10px #00f0ff50"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div><h4>💻 Software Engineer</h4><p style="color:#00f0ff">IME Digital — Kathmandu, Nepal</p></div>
+                        <span class="period-badge" style="color:#00f0ff;border-color:#00f0ff30;background:#00f0ff15">May 2021 - Jul 2022</span>
+                    </div>
+                    <ul><li>Provided technical support to end-users by troubleshooting and resolving software-related issues.</li><li>Wrote, debugged, and tested code using ASP.NET / ISO 8583 standard for secure payment gateway.</li><li>Maintained and updated existing codes by identifying vulnerabilities and fixing bugs.</li><li>Deployed software applications to production environments automated with Atlassian Bamboo.</li><li>Provided support to 100+ end-users with hundreds of customer feedback.</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="resume-heading purple">🎓 Education</h3>
+        <div class="edu-card"><div class="edu-header"><div><h4>🎓 Master of Science in Cybersecurity & Information Assurance</h4><p>Western Governors University, USA</p></div><span class="period-badge purple">2022 - 2024</span></div><ul><li>Focused on network security, threat analysis, and information assurance.</li><li>Gained expertise in vulnerability assessment, penetration testing, and security operations.</li><li>Completed capstone project on advanced network security solutions.</li></ul></div>
+        <div class="edu-card"><div class="edu-header"><div><h4>🎓 Bachelor of Engineering in Information Technology</h4><p>Nepal College of Information Technology, Lalitpur, Nepal</p></div><span class="period-badge purple">2016 - 2021</span></div><ul><li>Attended workshops and seminars on career development.</li><li>Participated in coding competitions and hackathons.</li><li>Presented research and projects at conferences.</li></ul></div>
+
+        <h3 class="resume-heading accent">🏆 Certifications</h3>
+        <div class="cert-list">
+            <div class="cert-item"><div class="cert-dot"></div><span>Cisco Certified Network Associate (CCNA)</span><span class="cert-issuer">Cisco</span></div>
+            <div class="cert-item"><div class="cert-dot"></div><span>ISC2 Certified in Cybersecurity (CC)</span><span class="cert-issuer">ISC2</span></div>
+            <div class="cert-item"><div class="cert-dot"></div><span>CompTIA Cybersecurity Analyst (CySA+)</span><span class="cert-issuer">CompTIA</span></div>
+            <div class="cert-item"><div class="cert-dot"></div><span>Google IT Support Professional Certificate</span><span class="cert-issuer">Google</span></div>
+            <div class="cert-item"><div class="cert-dot"></div><span>Python and Django</span><span class="cert-issuer">Udemy</span></div>
+        </div>
+    </div>
+</section>
+
+    <div class="section-divider purple"></div>
+<section id="Contact" class="contact-section section-reveal">
+    <div class="section-container narrow">
+        <h2 class="section-title"><span>Get In </span><span class="gradient-text">Touch</span></h2>
+        <div class="title-bar"></div>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Drop me a message and I'll get back to you as soon as possible.</p>
+
+        <div class="contact-form-card" id="contactFormCard">
+           <center> <a href="https://www.linkedin.com/in/pradippandit" target="_blank" class="btn-primary">💼 Connect on LinkedIn</a></center>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/pradippandit" target="_blank" title="LinkedIn">💼</a>
+            <a href="https://github.com/pradip026" target="_blank" title="GitHub">⚡</a>
+            <a href="https://panditpradip.com.np" target="_blank" title="Website">🌐</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Pradip Pandit. Crafted with ❤️ and lots of ☕</p>
+        </div>
+    </div>
+</section>
+</div>
+    <script src='Assets/main.js'></script>
+</body>
+</html>
